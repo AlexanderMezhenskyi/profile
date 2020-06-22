@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" rel="stylesheet">
+    <link href="./assets/styles/styles.css" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+<main id="profile">
+    <button type="button" class="back-btn">
+        <i class="icon-back"></i>
+    </button>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./assets/images/photo_place.jpg"
+                     srcset="./assets/images/photo_place@2x.jpg 2x, ./assets/images/photo_place@3x.jpg 3x"
+                     alt="profile-photo">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/images/photo_place.jpg"
+                     srcset="./assets/images/photo_place@2x.jpg 2x, ./assets/images/photo_place@3x.jpg 3x"
+                     alt="profile-photo">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/images/photo_place.jpg"
+                     srcset="./assets/images/photo_place@2x.jpg 2x, ./assets/images/photo_place@3x.jpg 3x"
+                     alt="profile-photo">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/images/photo_place.jpg"
+                     srcset="./assets/images/photo_place@2x.jpg 2x, ./assets/images/photo_place@3x.jpg 3x"
+                     alt="profile-photo">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/images/photo_place.jpg"
+                     srcset="./assets/images/photo_place@2x.jpg 2x, ./assets/images/photo_place@3x.jpg 3x"
+                     alt="profile-photo">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/images/photo_place.jpg"
+                     srcset="./assets/images/photo_place@2x.jpg 2x, ./assets/images/photo_place@3x.jpg 3x"
+                     alt="profile-photo">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/images/photo_place.jpg"
+                     srcset="./assets/images/photo_place@2x.jpg 2x, ./assets/images/photo_place@3x.jpg 3x"
+                     alt="profile-photo">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>
+                <i class="profile-icon icon-check"></i>
+                Nastya, 29
+                <span class="online-status">&bull;</span>
+            </h1>
+            <p class="about">
+                I think I've told everything about myself. I do not think my life is boring because every day confronted
+                with something new and interesting for me
+            </p>
+            <div class="features">
+                <div class="feature checked">
+                    <i class="icon-ruler"></i><span>7'0.7'</span>
+                </div>
+                <div class="feature">
+                    <i class="icon-scales"></i><span>132 lbs</span>
+                </div>
+                <div class="feature">
+                    <i class="icon-bodytype"></i><span>Slim</span>
+                </div>
+                <div class="feature">
+                    <i class="icon-haircolor"></i><span>Blonde</span>
+                </div>
+            </div>
+            <h2>Extend info</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="icon-religion"></i><span>Christianity</span>
+                </div>
+                <div class="feature">
+                    <i class="icon-smoke"></i><span>I do not smoke</span>
+                </div>
+                <div class="feature">
+                    <i class="icon-relationship"></i><span>Is free</span>
+                </div>
+                <div class="feature">
+                    <i class="icon-wine"></i><span>Socialy</span>
+                </div>
+                <div class="feature">
+                    <i class="icon-child"></i><span>Already adults</span>
+                </div>
+                <div class="feature">
+                    <i class="icon-sexuality"></i><span>Bisexual</span>
+                </div>
+            </div>
+            <div class="user-info">
+                <span class="title">I’m here...</span>
+                <span class="answer-text">To see what happens</span>
+                <span class="title">Education</span>
+                <span class="answer-text">High scholl</span>
+                <span class="title">Work</span>
+                <span class="answer-text">Journalist, best mom ever</span>
+                <span class="title">Current location</span>
+                <span class="answer-text">5 ml away</span>
+                <span class="title">Verification</span>
+                <span class="answer-text verification">
+                    <i class="profile-icon icon-check"></i>
+                    Nastya is photo-verified
+                </span>
+                <span class="title">Logged in</span>
+                <span class="answer-text auth">
+                    <i class="profile-icon icon-facebook"></i>
+                    Nastya logged in with  facebook
+                </span>
+            </div>
+            <div class="actions">
+                <button type="button" class="report">Report abuse</button>
+                <button type="button" class="like">
+                    <i class="icon-heart"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+</script>
+</body>
+</html>

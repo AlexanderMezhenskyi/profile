@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?x1a03s');
+  src: url('../fonts/icomoon.eot?x1a03s#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?x1a03s') format('truetype'),
+  url('../fonts/icomoon.woff?x1a03s') format('woff'),
+  url('../fonts/icomoon.svg?x1a03s#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-back:before {
+  content: "\e90d";
+}
+
+.icon-bodytype:before {
+  content: "\e900";
+}
+
+.icon-check:before {
+  content: "\e901";
+}
+
+.icon-child:before {
+  content: "\e902";
+}
+
+.icon-facebook:before {
+  content: "\e903";
+}
+
+.icon-haircolor:before {
+  content: "\e904";
+}
+
+.icon-heart:before {
+  content: "\e905";
+}
+
+.icon-relationship:before {
+  content: "\e906";
+}
+
+.icon-religion:before {
+  content: "\e907";
+}
+
+.icon-ruler:before {
+  content: "\e908";
+}
+
+.icon-scales:before {
+  content: "\e909";
+}
+
+.icon-sexuality:before {
+  content: "\e90a";
+}
+
+.icon-smoke:before {
+  content: "\e90b";
+}
+
+.icon-wine:before {
+  content: "\e90c";
+}

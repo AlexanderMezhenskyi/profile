@@ -1,0 +1,254 @@
+@import "fonts";
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body, html {
+  color: #000;
+  height: 100%;
+  min-width: 300px;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#profile {
+  position: relative;
+
+  .back-btn {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    z-index: 2;
+
+    .icon-back {
+      font-size: 22px;
+    }
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  background: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: -42px;
+  padding: 16px;
+  z-index: 1;
+
+  .profile-icon {
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  .icon-check {
+    font-size: 10px;
+    background: #2196F3;
+  }
+
+  .icon-facebook {
+    width: 22px;
+    font-size: 10px;
+    background: #703EF0;
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 0 21px;
+  }
+
+  .online-status {
+    color: #10B56B;
+    font-size: 30px;
+    margin-left: 7px;
+  }
+
+  .about {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 18px;
+  }
+
+  .feature {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #F4F4F4;
+    border-radius: 8px;
+    margin-bottom: 8px;
+
+    &.checked {
+      color: #fff;
+      background: #2196F3;
+
+      span {
+        color: #fff;
+      }
+    }
+
+    span {
+      color: #848484;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 8px;
+    }
+
+    .icon-scales {
+      font-size: 16px;
+      margin-left: 3px;
+    }
+
+    .icon-bodytype {
+      font-size: 17px;
+      margin-left: 5px;
+    }
+
+    .icon-religion,
+    .icon-relationship {
+      margin-left: 6px;
+    }
+
+    .icon-smoke,
+    .icon-wine,
+    .icon-child,
+    .icon-sexuality {
+      margin-left: 3px;
+    }
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 10px 0 14px;
+  }
+
+  .user-info {
+    font-weight: 500;
+    padding-top: 15px;
+
+    span {
+      display: block;
+    }
+
+    .title {
+      color: #848484;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 4px;
+    }
+
+    .answer-text {
+      color: #000000;
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 17px;
+
+      &.verification {
+        display: flex;
+        align-items: center;
+        margin-top: 9px;
+
+        .icon-check {
+          margin-right: 11px;
+        }
+      }
+
+      &.auth {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 3px;
+
+        .icon-facebook {
+          margin: 2px 13px 0 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .actions {
+    padding: 19px 0 32px;
+    text-align: center;
+
+    .report {
+      width: 100%;
+      color: #848484;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      border: 1px solid #848484;
+      border-radius: 8px;
+      padding: 13px 0;
+      margin-bottom: 24px;
+    }
+
+    .like {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .icon-heart {
+      color: #D8CBF9;
+      font-size: 22px;
+    }
+  }
+}
+
+.swiper-container {
+  .swiper-slide {
+    text-align: center;
+  }
+
+  .swiper-pagination {
+    bottom: 50px;
+
+    &-bullet {
+      width: 40px;
+      height: 4px;
+      border-radius: 0;
+      background: rgba(255, 255, 255, 0.6);
+
+      &:first-child {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+    }
+
+    &-bullet-active {
+      background: #FFFFFF;
+    }
+  }
+}
